@@ -31,3 +31,17 @@ O diretório raiz também contém uma implementação independente do Piremaxx (
 Os registros são mantidos no armazenamento local do navegador. Em **Backup e restauração**, use **Exportar backup JSON** para salvar uma cópia e **Restaurar JSON** para carregar um arquivo anteriormente exportado.
 
 O sistema local agora possui tela de login própria, com o mesmo conceito visual do ambiente examinado, e menu lateral completo: Vendedores, Equipes, Clientes, Rotas, Itens, Outros Cadastros, Visitas, Ausências Programadas, Gráficos, Mapas, Painel de Gestão, Book de Fotos, Mensagens e Backup/Restauração. A sessão é local ao navegador e pode ser encerrada pelo item **Sair**.
+
+## Execução no Render
+
+O projeto agora possui uma base Node.js para publicação no Render (server.js, package.json e ender.yaml). O blueprint cria o serviço web Piremaxx e um PostgreSQL compartilhado. O usuário inicial é Master com senha 1604; altere essa senha assim que o primeiro acesso multiusuário estiver conectado.
+
+Validação local do servidor:
+
+`ash
+npm install
+npm run check
+npm start
+` 
+
+No Render, use **New > Blueprint** e selecione este repositório. O ender.yaml configura o serviço e o banco; o frontend continua sendo servido pelo próprio Node.
