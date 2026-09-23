@@ -32,16 +32,26 @@ Os registros são mantidos no armazenamento local do navegador. Em **Backup e re
 
 O sistema local agora possui tela de login própria, com o mesmo conceito visual do ambiente examinado, e menu lateral completo: Vendedores, Equipes, Clientes, Rotas, Itens, Outros Cadastros, Visitas, Ausências Programadas, Gráficos, Mapas, Painel de Gestão, Book de Fotos, Mensagens e Backup/Restauração. A sessão é local ao navegador e pode ser encerrada pelo item **Sair**.
 
-## Execução no Render
+## Publicação manual no Render Free
 
-O projeto agora possui uma base Node.js para publicação no Render (server.js, package.json e ender.yaml). O blueprint cria o serviço web Piremaxx e um PostgreSQL compartilhado. O usuário inicial é Master com senha 1604; altere essa senha assim que o primeiro acesso multiusuário estiver conectado.
+A publicação deve ser feita manualmente, sem Blueprint:
 
-Validação local do servidor:
+1. No Render, escolha **New > Web Service**.
+2. Selecione o repositório público `DiversosPrint/piremaxx`.
+3. Build Command: `npm ci`.
+4. Start Command: `npm start`.
+5. Escolha o plano **Free**.
+6. Crie um banco PostgreSQL separado no plano **Free** e informe sua `DATABASE_URL` nas variáveis do serviço.
+7. Gere uma variável `JWT_SECRET` forte.
 
-`ash
+O servidor Node usa a porta `PORT` fornecida pelo Render. O usuário inicial é `Master` com senha `1604`; altere essa senha assim que o acesso multiusuário estiver conectado.
+
+Validação local:
+
+```bash
 npm install
 npm run check
 npm start
-` 
+```
 
-No Render, use **New > Blueprint** e selecione este repositório. O ender.yaml configura o serviço e o banco; o frontend continua sendo servido pelo próprio Node.
+Atenção: o serviço web gratuito pode dormir após inatividade e o PostgreSQL Free do Render expira após 30 dias, além de não oferecer backups. Para dados empresariais permanentes, será necessário migrar o banco para um plano pago ou outro PostgreSQL com persistência e backup.
