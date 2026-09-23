@@ -1,0 +1,338 @@
+
+
+
+.default-header-background {
+	background-color: #1E324A;
+}
+
+.form_login_custom_style{
+	background-color: rgba(30,50,74,0.8); 
+}
+
+.form_login_custom_style .info {
+	color: #191863;
+}
+
+.form_login_button_custom_style{
+	background: #191863;
+}
+
+.rgb-background {
+  background-color: rgba(30,50,74,0.8);
+}
+
+.primary-color {
+	color: #191863;
+}
+.secundary-color {
+	color: #F1A900;
+}
+
+
+.primary-detail-color {
+	color: #141414;
+}
+.primary-background {
+	background-color: #191863;
+}
+.secundary-background {
+	background-color: #F1A900;
+}
+.primary-detail-border {
+	border-color:#3C3B86;
+}
+.primary-textcolor {
+	color : #000000;
+}
+.border {
+	border: 1px solid #3C3B86 !important;
+}
+.border-input {
+  border: 2px solid #3C3B86;
+}
+input.primary-detail-border:focus {
+	box-shadow: 0 0 4px #3C3B86;
+}
+select:focus, .select2-container-active {
+	border: 2px solid #191863;
+	box-shadow: 0 0 4px #3C3B86;
+}
+
+/*header.css*/
+#box_logoff{
+	background-color:#3C3C3C;
+	color:#777777;
+}
+#box_logoff_data a{
+	border:1px solid #777777;
+	color:#3C3B86
+}
+#layout_header{
+	background-color: #1E324A;
+}
+
+#report-layout_header {
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    flex-grow: 2;
+}
+.report-flex-space {
+    flex-grow: 1;
+}
+
+.blockPage {
+	background-color:#191863;
+	border-color:#3C3B86;
+	color:#000000;
+}
+
+/*ie_login.css*/
+#form_login input{
+	border:2px solid #3C3B86;
+}
+
+/*login.css*/
+#submit_button{
+  background-color: #1E324A;
+  border:2px solid #3C3B86;
+  color: #141414;
+  padding:5px 10px 5px 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width:90%;
+  text-shadow:#555 -1px -1px 0px;
+  text-transform:uppercase;
+  font-size:22px;
+  font-weight:bolder;
+  border-radius:24px;
+}
+
+#form_login input{
+  border:2px solid #3C3B86;
+}
+
+/*page.css*/
+#title_bar{
+	background-color: transparent;/*#191863*/
+}
+.tt-separator-line{
+  border-color:#3C3B86;
+}
+.tt-separator-enum{
+  color:#3C3B86;
+}
+.form-wrapper{
+  border: 1px solid #3C3B86;
+}
+.tt-plus-menu-items {
+  border:1px solid #3C3B86;
+}
+#title_bar span {
+  color: #000000;
+}
+
+/*ttmenu.css*/
+#ttmenu_toolbar > div > span > a{
+	color:#3C3B86;
+}
+.menu-button-primary{
+	background-color:#3C3C3C;
+	border-top:6px solid #191863;
+	color:#3C3B86;
+}
+.menu-button-primary:hover{
+	background-color:#191863;
+	color:#FFFFFF;
+}
+.menu-button-secundary{
+	background-color:#3C3C3C;
+	border-top:6px solid #F1A900;
+	color:#FFCC23;
+}
+.menu-button-secundary:hover{
+	background-color:#F1A900;
+	color:#FFFFFF;
+}
+.menu-button-inactive{
+	background-color:#3C3C3C;
+	border-top:6px solid #777777;
+	color:#777777;
+}
+
+.menu-button-primary > div{
+	background-color:#191863;
+	border-color:#3C3B86;
+}
+.menu-button-secundary > div{
+	background-color:#F1A900;
+	border-color:#FFCC23;
+}
+
+.menu-button-primary .menu-group {
+	border-left:1px solid #3C3B86;
+}
+.menu-button-secundary .menu-group {
+	border-left:1px solid #FFCC23;
+}
+
+.menu-button-primary .subitem > a{
+	color:#191863;
+}
+.menu-button-secundary .subitem > a{
+	color:#F1A900;
+}
+
+.menu-button-primary .menu-group .subitem:hover{
+	background-color:#191863;
+}
+.menu-button-secundary .menu-group .subitem:hover{
+	background-color:#F1A900;
+}
+
+.menu-button-primary .menu-group .item:hover > a {
+	color:#191863;
+}
+.menu-button-secundary .menu-group .item:hover > a {
+	color:#F1A900;
+}
+
+.menu-button-primary a,
+.menu-button-primary a:visited
+.menu-button-primary a:active,
+.menu-button-primary a:focus,
+.menu-button-primary a:link {
+	color:#FFFFFF;
+}
+
+.menu-button-secundary a,
+.menu-button-secundary a:visited
+.menu-button-secundary a:active,
+.menu-button-secundary a:focus,
+.menu-button-secundary a:link {
+	color:#FFFFFF;
+}
+
+
+/* menu item animation !*/
+.menu-button-primary .menu-group .item:hover{
+	color:#191863;
+	background-color:#FFFFFF;
+} 
+.menu-button-secundary .menu-group .item:hover{
+	color:#F1A900;
+	background-color:#FFFFFF;
+}
+
+/* submenu item animation !*/
+.menu-button-primary .subitems {
+	background-color:#FFFFFF;
+}
+.menu-button-secundary .subitems{
+	background-color:#FFFFFF;
+}
+
+.menu-button-primary .subitem a {
+	color:#191863;
+}
+.menu-button-primary .subitem a:hover {
+	color:#FFFFFF;
+}
+.menu-button-secundary .subitem a {
+	color:#F1A900;
+}
+.menu-button-secundary .subitem a:hover {
+	color:#FFFFFF;
+}
+
+/*styles.css*/
+#box_breadcrumbs ul li a {
+	color:#191863;
+}
+#box_breadcrumbs ul li {
+  color:#191863;
+}
+.focused{
+  box-shadow:0px 0px 4px #3C3B86;
+  border-color:#191863!important;
+}
+.focusable:active, .focusable:focus {
+  border: 2px solid #191863;
+  box-shadow:0px 0px 4px #3C3B86;
+}
+.select-multiple-options{
+  border:1px solid #3C3B86;
+}
+.select-multiple-options div:hover{
+  background-color:#3C3B86;
+}
+
+/*jquery-ui-.custom.css*/
+.ui-widget-content { 
+	border: 1px solid #3C3B86;
+}
+.ui-widget-header { 
+	border: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { 
+	border: 1px solid #3C3B86;
+	background:none;
+	background-color: #191863; 
+	color: #000000;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #000000;
+}
+.ui-tabs .ui-tabs-nav {
+	padding-bottom:1px;
+}
+
+#background {
+	
+  		background-color:#FFFFFF;
+  	  	background-size: cover;
+  		top:0px;
+  	
+  	
+  	
+  	
+  	
+}
+
+#background img {
+	
+		width:100%;
+  		height:100%;
+  	
+	
+  	
+  	
+  	
+}
+
+.button-text-color
+{
+	color: #FFFFFF;
+}
+
+
+/*New Layout*/
+.nav-item:hover, .nav-item a:hover {
+	color: #191863;
+}
+.nav-item-static:hover, .nav-item-static a:hover {
+	color: #555;
+}
+
+.topbar-widget[class*="icon-"] {
+	color: #FFFFFF;
+}
+.topbar-widget[class*="icon-"]:hover {
+	color: #CDCDCD;
+}
+
+/*widgets*/
+#DiscoveryWidget {
+	background-color: rgba(210, 210, 210, 0.85);
+}

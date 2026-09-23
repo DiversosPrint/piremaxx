@@ -1,0 +1,132 @@
+{
+  "assets": [
+    {
+      "contentType": "text/css",
+      "id": "d956e4fdbe297f1b",
+      "kind": "stylesheet",
+      "name": "application4.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/d956e4fdbe297f1b.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/styles/application4.css?_v=7.4.0"
+    },
+    {
+      "contentType": "text/css",
+      "id": "88fc678511adee9f",
+      "kind": "stylesheet",
+      "name": "font-awesome.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/88fc678511adee9f.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/styles/font-awesome.css?_v=7.4.0"
+    },
+    {
+      "contentType": "text/css",
+      "id": "a43121a8e6529934",
+      "kind": "stylesheet",
+      "name": "authentication.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/a43121a8e6529934.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/styles/authentication.css?_v=7.4.0"
+    },
+    {
+      "contentType": "text/css",
+      "id": "920445bac4fa7aaa",
+      "kind": "stylesheet",
+      "name": "colorSuggestion.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/920445bac4fa7aaa.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/styles/tags/color/colorSuggestion.css?_v=7.4.0"
+    },
+    {
+      "contentType": "text/css",
+      "id": "cb837435d7c54715",
+      "kind": "stylesheet",
+      "name": "newLayout.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/cb837435d7c54715.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/styles/newLayout.css?_v=7.4.0"
+    },
+    {
+      "contentType": "text/css",
+      "id": "96241478d336bff5",
+      "kind": "stylesheet",
+      "name": "css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/96241478d336bff5",
+      "url": "https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    },
+    {
+      "contentType": "text/css",
+      "id": "527ed1938ece4375",
+      "kind": "stylesheet",
+      "name": "customStyle.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/527ed1938ece4375.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/customStyle.css?_r=1790176366326&_v=7.4.0"
+    },
+    {
+      "contentType": "image/png",
+      "id": "6aced703a2f60edc",
+      "kind": "image",
+      "name": "25195422",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/6aced703a2f60edc",
+      "url": "https://api.umov.me/CenterWeb/media/show/25195422?1715088928524"
+    },
+    {
+      "contentType": "image/png",
+      "id": "1ccba2117937b472",
+      "kind": "image",
+      "name": "add.png",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/1ccba2117937b472.png",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/images/icons/add.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "f1585d9b54bd234b",
+      "kind": "image",
+      "name": "search.png",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/f1585d9b54bd234b.png",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/images/icons/search.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "eb9384143245bb4a",
+      "kind": "image",
+      "name": "erase.png",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/eb9384143245bb4a.png",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/images/icons/erase.png"
+    },
+    {
+      "contentType": "image/png",
+      "id": "391f99a573f3a299",
+      "kind": "image",
+      "name": "trash.png",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/391f99a573f3a299.png",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/images/icons/trash.png"
+    },
+    {
+      "contentType": "text/css",
+      "id": "ce093343d5e580b1",
+      "kind": "stylesheet",
+      "name": "print-styles.css",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/ce093343d5e580b1.css",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/styles/print-styles.css?_v=7.4.0"
+    },
+    {
+      "contentType": "font/woff",
+      "id": "d1498cec7cf1dd0f",
+      "kind": "font",
+      "name": "umoviconsfont.woff",
+      "path": "C:\\Users\\PIXELM~1\\AppData\\Local\\Temp/browser-use/assets/77632c21-7b9c-45ec-9d95-51a45062a3eb/d1498cec7cf1dd0f.woff",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/fonts/umoviconsfont.woff?1489670860"
+    }
+  ],
+  "failures": [
+    {
+      "contentType": "application/octet-stream",
+      "id": "b326498b1a4103f4",
+      "name": "CENTER_LOGO",
+      "reason": "Asset response type application/octet-stream is not valid for image",
+      "url": "https://whitelabel.umov.me/piremaxx/CENTER_LOGO?1686067010122"
+    },
+    {
+      "contentType": null,
+      "id": "e73bcb243c9ec7b7",
+      "name": "ui-bg_diagonals-small_75_ffffff_40x40.png",
+      "reason": "Asset response type missing is not valid for image",
+      "url": "https://piremaxx.umov.me/CenterWeb/resources/images/plugins/jqueryui/ui-bg_diagonals-small_75_ffffff_40x40.png"
+    }
+  ]
+}

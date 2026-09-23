@@ -1,0 +1,16 @@
+{
+  "name": "Piremaxx - Central de Operações",
+  "short_name": "Piremaxx",
+  "description": "Gestão operacional independente Piremaxx",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f6f8",
+  "theme_color": "#172a3d",
+  "lang": "pt-BR",
+  "icons": [
+    {"src":"logo-oficial.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"logo-oficial.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
