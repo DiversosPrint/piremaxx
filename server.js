@@ -24,7 +24,7 @@ async function databaseReady() {
   await pool.query(`CREATE TABLE IF NOT EXISTS app_records (collection TEXT NOT NULL, record_id TEXT NOT NULL, payload JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), PRIMARY KEY(collection, record_id));`);
   await pool.query(`ALTER TABLE app_users ADD COLUMN IF NOT EXISTS display_name TEXT NOT NULL DEFAULT '';`);
   const master = await pool.query('SELECT id FROM app_users WHERE username=$1', ['master']);
-  if (!master.rowCount) await pool.query('INSERT INTO app_users(username,password_hash,role,display_name) VALUES(,,,)', ['master', await bcrypt.hash('1604', 12), 'master', 'Master']);
+  if (!master.rowCount) await pool.query('INSERT INTO app_users(username,password_hash,role,display_name) VALUES($1,$2,$3,$4)', ['master', await bcrypt.hash('1604', 12), 'master', 'Master']);
   return true;
 }
 
@@ -57,7 +57,7 @@ app.get('/api/users', auth, masterOnly, async (_req, res) => {
 });
 
 app.post('/api/users', auth, masterOnly, async (req, res) => {
-  try { const username = String(req.body?.username || '').trim().toLowerCase(); const displayName = String(req.body?.displayName || '').trim(); const password = String(req.body?.password || ''); if (!username || !displayName || password.length < 4) return res.status(400).json({ error: 'Nome, login e senha com no mínimo 4 caracteres são obrigatórios.' }); const result = await pool.query('INSERT INTO app_users(username,password_hash,role,display_name) VALUES($1,$2,$3,$4) RETURNING id,username,display_name AS "displayName",role,active', [username, await bcrypt.hash(password, 12), 'seller', displayName]); res.status(201).json({ user: result.rows[0] }); } catch (error) { res.status(error.code === '23505' ? 409 : 500).json({ error: error.code === '23505' ? 'Este login já existe.' : error.message }); }
+  if (!master.rowCount) await pool.query('INSERT INTO app_users(username,password_hash,role,display_name) VALUES($1,$2,$3,$4)', ['master', await bcrypt.hash('1604', 12), 'master', 'Master']);
 });
 app.get('/api/data', auth, async (req, res) => {
   try { const result = await pool.query('SELECT collection,record_id,payload FROM app_records'); const data = Object.fromEntries(collections.map(name => [name, []])); for (const row of result.rows) (data[row.collection] ||= []).push({ id: row.record_id, ...row.payload }); if (req.user.role === 'seller') { const visits = data.visitas.filter(v => String(v.vendedor || '').toLowerCase() === String(req.user.username).toLowerCase() || String(v.vendedor || '').toLowerCase() === String(req.user.displayName || '').toLowerCase()); const clients = new Set(visits.map(v => String(v.cliente || '').toLowerCase())); data.visitas = visits; data.clientes = data.clientes.filter(c => clients.has(String(c.nome || '').toLowerCase())); data.gpsLogs = data.gpsLogs.filter(log => visits.some(v => String(v.id) === String(log.visitaId))); for (const key of collections) if (!['visitas', 'clientes', 'gpsLogs'].includes(key)) data[key] = []; } res.json({ data }); } catch (error) { res.status(500).json({ error: error.message }); }
